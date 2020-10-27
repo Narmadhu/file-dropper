@@ -1,0 +1,51 @@
+.drop-box {
+  background-color: white;
+  position: relative;
+  top: 80px;
+  left: 50px;
+  width: 300px;
+  height: 400px;
+  padding: 30px;
+}
+form {
+  position: relative;
+}
+.invisible-input {
+  position: absolute;
+  display: none;
+}
+
+.file-add {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 8px;
+}
+
+.file-heading {
+  position: absolute;
+  top: 3px;
+  left: 60px;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.file-btn {
+  text-decoration: underline;
+  outline: none;
+  border: none;
+  background-color: white;
+  position: absolute;
+  top: 30px;
+  left: 55px;
+  font-weight: 100;
+}
+
+.file-input {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  height: 50px;
+  background-color: yellow;
+  cursor: pointer;
+}
