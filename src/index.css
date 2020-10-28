@@ -5,10 +5,54 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(174, 239, 248);
+  /* background-color: rgb(192, 237, 243); */
+  /* height: 100vh;
+  background-image: url("./images/flowers.jpg");
+  animation: imageAnimation 30s infinite;
+  background-size: cover;
+  background-position: center;
+  background-color: #000;
+  position: relative;
+  height: 100vh; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* .app::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.3;
+} */
+
+/* @keyframes imageAnimation {
+  0% {
+    background-image: url("./images/img1.jpg");
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  8% {
+    background-image: url("./images/img2.jpg");
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  17% {
+    background-image: url("./images/img3.jpg");
+    opacity: 1;
+  }
+  25% {
+    background-image: url("./images/img4.jpg");
+    opacity: 0;
+  }
+  100% {
+    background-image: url("./images/img4.jpg");
+    opacity: 0;
+  }
+} */

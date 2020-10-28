@@ -1,2 +1,43 @@
 .app {
+  height: 100vh;
+  background-image: url("./images/img6.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-color: #000;
+  position: relative;
+  animation: imageAnimation 60s infinite; */
 }
+
+/* @keyframes imageAnimation {
+  25% {
+    background-image: url("./images/img1.jpg");
+    animation-timing-function: ease-in;
+    opacity: 1;
+    animation-delay: 8s;
+  }
+  25% {
+    background-image: url("./images/img2.jpg");
+    animation-timing-function: ease-in;
+    opacity: 1;
+    animation-delay: 6s;
+  }
+  75% {
+    background-image: url("./images/img6.jpg");
+    animation-timing-function: ease-in;
+    opacity: 1;
+    animation-delay: 4s;
+  }
+  75% {
+    background-image: url("./images/img1.jpg");
+    animation-timing-function: ease-in;
+    opacity: 1;
+    animation-delay: 4s;
+  }
+  100% {
+    background-image: url("./images/img2.jpg");
+    opacity: 1;
+    animation-delay: 0;
+  }
+} */
