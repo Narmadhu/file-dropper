@@ -1,6 +1,5 @@
 .app {
   height: 100vh;
-  /* background-image: url("./images/sky.jpg"); */
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -25,42 +24,3 @@
     background-image: url("./images/sky.jpg");
   }
 }
-
-/* .app {
-  height: 100vh;
-  background-image: url("./images/img6.jpg");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  /* background-color: #000;
-  position: relative;
-  animation: imageAnimation 60s infinite; */
-/* }  */
-
-/* .app {
-  height: 100vh;
-  animation: bgfade 15s infinite;
-  background-size: cover;
-  background-position: center;
-  background-color: #000;
-  position: relative;
-}
-
-@keyframes bgfade {
-  0% {
-    background-image: url("./images/img1.jpg");
-  }
-  25% {
-    background-image: url("./images/img2.jpg");
-  }
-  50% {
-    background-image: url("./images/img3.jpg");
-  }
-  75% {
-    background-image: url("./images/img6.jpg");
-  }
-  100% {
-    background-image: url("./images/img1.jpg");
-  }
-} */

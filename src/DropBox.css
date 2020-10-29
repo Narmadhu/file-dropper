@@ -9,7 +9,7 @@
   width: 280px;
   height: 300px;
   padding: 30px;
-  box-shadow: 0 0 20px #6d6d6db3;
+  box-shadow: 0 0 20px #6b6b6bb3;
   border-radius: 10px;
 }
 form {
@@ -67,6 +67,26 @@ form {
   width: 100px;
 }
 .list-group-item {
-  width: 100px;
-  height: 200px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+.delete {
+  opacity: 0;
+}
+.list-group-item:hover .delete {
+  opacity: 1;
+  color: rgb(72, 170, 228);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: none;
+  font-weight: 800;
+  width: 30px;
 }
