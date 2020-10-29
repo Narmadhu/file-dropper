@@ -21,11 +21,11 @@ function DropBox() {
    setListFiles([{key:Date.now(),name:selectedFile.name}, ...listFiles])
    }
 
-  // const Thumnail=({image})=>{
-  //    return(
-  //       <img className="thumbnail" src={URL.createObjectURL(image)} alt={image.name} />
-  //     )
-  //    }
+  const Thumnail=({image})=>{
+     return(
+        <img className="thumbnail" src={URL.createObjectURL(image)} alt={image.name} />
+      )
+     }
     
 
     return (
@@ -43,15 +43,15 @@ function DropBox() {
           <div className="panel panel-primary" id="result_panel">
             <div className="panel-body">
             <ul className="list-group" >
-              { listFiles.map((listFile)=>(
+              {/* { listFiles.map((listFile)=>(
                 <div key={listFile.key} >
                   {listFile.name}
                   <a>x</a>
                 </div>
-              )) }
-                 {/* <li className="list-group-item"> { files && <Thumnail  image={files} /> }<strong>  
-                   {files.name}</strong>
-                 </li>   */}
+              )) } */}
+                 <li className="list-group-item"> { selectedFile && <Thumnail  image={selectedFile} /> }<strong>  
+                   {selectedFile.name}</strong>
+                 </li>  
             </ul>
             </div>
             </div>

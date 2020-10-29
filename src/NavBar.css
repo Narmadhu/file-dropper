@@ -1,5 +1,7 @@
 .nav-bar {
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
 }
 .nav-title {
@@ -17,7 +19,7 @@
   border: 1px solid rgba(0, 0, 0, 0.171);
   border-radius: 8px;
   background-color: white;
-  margin: 15px;
+  margin-right: 100px;
   font-size: small;
   font-weight: 600;
 }
