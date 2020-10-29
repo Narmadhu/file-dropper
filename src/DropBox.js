@@ -12,12 +12,13 @@ function DropBox() {
    setSelectedFile(e.target.files[0]);
    if (selectedFile==="") return
    setListFiles([{key:Date.now(),name:selectedFile.name}, ...listFiles])
- 
    }
 
    const removeFile= (key)=>{
      setListFiles(listFiles.filter((listFile)=>listFile.key!==key))
    }
+
+  //  function for showing thumbnail 
 
   // const Thumbnail=({image})=>{
   //    return(
@@ -25,7 +26,6 @@ function DropBox() {
   //     )
   //    }
     return (
-      <div className="grid">
         <div className="drop-box">
           <Card>  
           <form>
@@ -39,6 +39,9 @@ function DropBox() {
           <div className="panel panel-primary" id="result_panel">
             <div className="panel-body">
             <ul className="list-group" >
+             
+              {/* list with selected file's name and delete symbol  */}
+
               { listFiles.map((listFile)=>(
                 <li  className="list-group-item" key={listFile.key} >    
                   {listFile.name}
@@ -56,10 +59,10 @@ function DropBox() {
             </div>
             </div>
           </div>
-        </div>
+        
          
     )
 }
 
 
-export default DropBox
+export default DropBox;

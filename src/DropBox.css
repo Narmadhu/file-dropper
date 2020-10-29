@@ -1,6 +1,3 @@
-/* .grid {
-  border: 1px solid black;
-} */
 .drop-box {
   background-color: white;
   position: relative;
@@ -60,7 +57,7 @@ form {
   -webkit-overflow-scrolling: touch;
 }
 .panel {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .thumbnail {
   height: 90px;
