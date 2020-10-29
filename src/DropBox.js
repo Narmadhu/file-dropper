@@ -10,45 +10,52 @@ AOS.init({
 
 function DropBox() {
    const [selectedFile,setSelectedFile]=useState("") 
-   const [filesList,setFilesList]=useState([])
+   const [listFiles,setListFiles]=useState([
+     {key:Date.now(),name:"image.png"}
+   ])
 
    const updateFile=(e)=>{
-    setSelectedFile(e.target.files[0])
+   setSelectedFile(e.target.files[0]);
+   console.log(e.target.files[0])
+   if (selectedFile==="") return
+   setListFiles([{key:Date.now(),name:selectedFile.name}, ...listFiles])
    }
 
-   const getFile=(e)=>{
-    e.preventDefault()
-    if (selectedFile) return;
-    setFilesList([{ key: Date.now(), name: selectedFile.current.files[0].name }, ...filesList]);
-}
-  
+  // const Thumnail=({image})=>{
+  //    return(
+  //       <img className="thumbnail" src={URL.createObjectURL(image)} alt={image.name} />
+  //     )
+  //    }
+    
 
     return (
+      <div className="grid">
         <div className="drop-box">
-          <Card >  
-          <form onSubmit={getFile} >
+          <Card>  
+          <form  >
            <input type="text" className="invisible-input" />
             <img src="/images/images.jpg" className="file-add" alt="Drop your file" />
-            <input type="file" className="file-input" multiple onChange={updateFile} ></input>   
+            <input type="file" accept="image/*" className="file-input" multiple onChange={updateFile} ></input>   
             <Card.Title className="file-heading">Drop your file</Card.Title>
             <Button className="file-btn" > Or Select a folder </Button>
           </form>
           </Card> 
-            <div class="panel panel-primary" id="result_panel">
-            <div class="panel-body">
-            <ul class="list-group">
-            <li class="list-group-item"><strong>Hello</strong></li>
-            <li class="list-group-item"><strong>Hello</strong></li>
-            <li class="list-group-item"><strong>Hello</strong></li>
-            <li class="list-group-item"><strong>Hello</strong></li>
-            <li class="list-group-item"><strong>Hello</strong></li>
-            <li class="list-group-item"><strong>Hello</strong></li>
-            <li class="list-group-item"><strong>Hello</strong></li>
-            <li class="list-group-item"><strong>Hello</strong></li>
+          <div className="panel panel-primary" id="result_panel">
+            <div className="panel-body">
+            <ul className="list-group" >
+              { listFiles.map((listFile)=>(
+                <div key={listFile.key} >
+                  {listFile.name}
+                  <a>x</a>
+                </div>
+              )) }
+                 {/* <li className="list-group-item"> { files && <Thumnail  image={files} /> }<strong>  
+                   {files.name}</strong>
+                 </li>   */}
             </ul>
             </div>
             </div>
-     
+          </div>
         </div>
          
     )

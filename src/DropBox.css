@@ -1,9 +1,12 @@
+/* .grid {
+  border: 1px solid black;
+} */
 .drop-box {
   background-color: white;
   position: relative;
-  top: 130px;
+  top: 100px;
   left: 70px;
-  width: 200px;
+  width: 300px;
   height: 300px;
   padding: 30px;
   box-shadow: 0 0 20px #6d6d6db3;
@@ -51,8 +54,19 @@ form {
   cursor: pointer;
 }
 .list-group {
-  max-height: 180px;
+  height: 200px;
   margin-bottom: 10px;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
+}
+.panel {
+  margin-top: 50px;
+}
+.thumbnail {
+  height: 90px;
+  width: 100px;
+}
+.list-group-item {
+  width: 100px;
+  height: 200px;
 }
